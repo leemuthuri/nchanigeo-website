@@ -1,0 +1,27 @@
+---
+import '../styles/global.css';
+const siteTitle = 'Nchani Geo';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{siteTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="brand">
+        <img src="/images/logo.png" alt="Nchani Geo logo — Meru since 2013" class="logo" />
+      </a>
+    </header>
+
+    <main class="site-main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <small>© {new Date().getFullYear()} Nchani Geo</small>
+    </footer>
+  </body>
+</html>

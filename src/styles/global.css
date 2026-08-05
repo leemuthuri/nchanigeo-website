@@ -1,0 +1,51 @@
+/* Global styles for nchanigeo-website */
+
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 56px;
+  width: auto;
+}
+
+.site-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.hero {
+  text-align: center;
+  max-width: 900px;
+}
+
+.hero-logo { 
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+}
+
+.tagline { color: var(--muted); letter-spacing: 0.2em; }
+.lead { color: var(--muted); }
+
+.site-footer { text-align: center; padding: 2rem 1rem; color: var(--muted); }
